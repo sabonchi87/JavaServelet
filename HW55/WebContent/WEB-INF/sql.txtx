@@ -1,0 +1,20 @@
+
+
+CREATE TABLE `feedb` (
+  `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `name` varchar(300) NOT NULL,
+   `message`   varchar(700),
+  `date` datetime NOT NULL,
+  `rate` int NOT NULL,
+   `f_id`  integer references candidates(id)
+    
+)
+
+INSERT INTO `feedb` (`name`, `message`, `date`, `rate`,`f_id`)
+VALUES ('sue', 'I like his research. Seems to be a nice person', now(), '5',1)
+
+
+
+INSERT INTO `feedb` (`name`, `message`, `date`, `rate`,`f_id`)
+VALUES ('Tom', 'The presentation was not very well organized. He may be a good researcher but I don\'t think he\'ll be a good teacher. ', now(), '3',1);
+
